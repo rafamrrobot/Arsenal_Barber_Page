@@ -1,0 +1,152 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Mono:wght@300&family=Shadows+Into+Light&display=swap');
+
+/*reset css*/
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background:  #121212 ;
+    font-size: 100% ;
+    max-width: 100%;
+    min-width: none;
+    width: 1320px ;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* cabeçalho e menu */
+.cabeçalho{
+ border:  1px solid red ;
+ background:  linear-gradient( #908782 , #D3545B ) ; 
+ display: flex ;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+ padding: 15px ;
+ 
+ 
+}
+
+#logo{
+    height: 50px ;
+
+}
+
+.menu{
+    text-align: right ;
+    color: #ffff05;
+    font-family: 'Nunito', sans-serif;
+    display: flex ;
+    gap: 25px ;
+}
+
+
+
+
+
+/* banner e inicio */
+.banner_main{
+    border: 1px solid green ;
+    background-image: url("images/primeiro_banner.png") ;
+    background-repeat: no-repeat ;
+    background-size: 1340px;
+    height: 500px ;
+    
+}
+
+.container_banner{
+    text-align:  center ;
+}
+
+.banner {
+    color:#ffff00;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+
+
+
+/*menu infos*/
+.infos_menu{
+    background-image: url(images/info_back1.png) ;
+    background-repeat: no-repeat;
+    background-size: 1340px;
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #D3545B ;
+    gap: 55px;
+    padding: 10px
+}
+
+.presentation_text{
+    width: 250px ;
+    height: 250px ;
+    flex-grow: 2;
+    text-indent: left;
+    border: 1px solid green;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
+}
+
+.info_image{
+    
+    width: 250px ;
+    height:  250px ;
+    border: 1px solid green;
+    flex-grow: 2;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
+}
+
+.container_table{
+    flex-grow: 2;
+    height: 250px ;
+    width: 250px ;
+    border: 1px solid green;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
+}
+
+
+
+
+
+/*serviços menu*/
+.services_menu{
+    border: 1px solid black ; 
+    background:  linear-gradient( #908782 , #D3545B ) ;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/*footer*/
+footer{
+    border: 1px solid pink ;
+    background:  linear-gradient(  #D3545B ,  #908782) ; 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
