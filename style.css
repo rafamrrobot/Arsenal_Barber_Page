@@ -11,11 +11,10 @@
 }
 
 body{
-    background:  #121212 ;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     font-size: 100% ;
     max-width: 100%;
     min-width: none;
-    width: 1320px ;
     margin-left: auto;
     margin-right: auto;
     
@@ -23,13 +22,11 @@ body{
 
 /* cabeçalho e menu */
 .cabeçalho{
- border:  1px solid red ;
- background:  linear-gradient( #908782 , #D3545B ) ; 
- display: flex ;
+  display: flex ;
  flex-direction: row;
  align-items: center;
  justify-content: space-around;
- padding: 15px ;
+ 
  
  
 }
@@ -53,19 +50,25 @@ body{
 
 /* banner e inicio */
 .banner_main{
-    border: 1px solid green ;
+    
     background-image: url("images/primeiro_banner.png") ;
     background-repeat: no-repeat ;
-    background-size: 1340px;
-    height: 500px ;
+    background-size: 1350px;
+    height: 608px ;
+    margin: 0px ;
+    text-align:  center ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     
 }
-
-.container_banner{
-    text-align:  center ;
+.banner_subtitle{
+  color: #ffff00 ;
+  font-family: 'Nunito' , sans-serif;
 }
 
-.banner {
+.banner_main {
     color:#ffff00;
     font-family: 'Shadows Into Light', cursive;
     font-size: 70px;
@@ -77,35 +80,110 @@ body{
 
 /*menu infos*/
 .infos_menu{
-    background-image: url(images/info_back1.png) ;
-    background-repeat: no-repeat;
-    background-size: 1340px;
+    
     display: flex ;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid #D3545B ;
     gap: 55px;
-    padding: 10px
+    margin: 20px 20px ;
+   
 }
 
 .presentation_text{
     width: 250px ;
     height: 250px ;
     flex-grow: 2;
-    text-indent: left;
-    border: 1px solid green;
     border-radius: 5px;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-  padding: 30px;
-  margin: 20px;
   transition: all 0.3s ease-out;
   border-left: 3px solid #ffffff;
 }
 
+.presentation_title{
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto mono', monospace;
+}
+.presentation_content{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  text-align: center ;
+  padding:15px ;
+}
+
 .info_image{
-    
+    background-image: url(images/info-back.png);
     width: 250px ;
+    height:  250px ;
+    flex-grow: 2;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
+}
+
+.container_table{
+  background: rgb(215,4,4);
+  background: linear-gradient(199deg, rgba(215,4,4,1) 0%, rgba(36,56,205,0.6502976190476191) 50%, rgba(255,255,255,1) 100%);
+    flex-grow: 2;
+    height: 250px ;
+    width: 250px ;
+    flex-grow: 2 ;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
+}
+
+
+
+ table{
+ 
+ 
+  font-weight: bold;
+  font-family: 'Roboto mono', monospace;
+  font-size: 18px;
+    height: 250px;
+    
+  
+}
+
+
+/*botões*/
+.buttons{
+    background-color: #fffb00;
+    border-radius: 100px;
+    width: 180px ;
+    height: 40px ;
+    border: none ;
+    box-shadow: 4px 5px 4px (0,0,0,0.25);
+}
+
+
+.buttons:hover{
+    background-color: #ffc400;
+}
+
+
+
+
+
+
+/*serviços menu*/
+.services_menu{
+    border: 1px solid black ; 
+   
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px ; 
+  border: 3px solid orange ;
+}
+.services_card1{
+    
+    width: 150px ;
     height:  250px ;
     border: 1px solid green;
     flex-grow: 2;
@@ -115,37 +193,33 @@ body{
   border-left: 3px solid #ffffff;
 }
 
-.container_table{
-    flex-grow: 2;
-    height: 250px ;
-    width: 250px ;
+.services_card2{
+    
+    width: 150px ;
+    height:  250px ;
     border: 1px solid green;
+    flex-grow: 2;
     border-radius: 5px;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-  padding: 30px;
-  margin: 20px;
   transition: all 0.3s ease-out;
   border-left: 3px solid #ffffff;
 }
-
-
-
-
-
-/*serviços menu*/
-.services_menu{
-    border: 1px solid black ; 
-    background:  linear-gradient( #908782 , #D3545B ) ;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  
+.services_card3{
+    
+    width: 150px ;
+    height:  250px ;
+    border: 1px solid green;
+    flex-grow: 2;
+    border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+  border-left: 3px solid #ffffff;
 }
 
 /*footer*/
 footer{
     border: 1px solid pink ;
-    background:  linear-gradient(  #D3545B ,  #908782) ; 
+   
     display: flex;
   justify-content: center;
   align-items: center;
